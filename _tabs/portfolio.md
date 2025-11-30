@@ -1,58 +1,46 @@
 ---
-layout: page
 title: Portfolio
 icon: fas fa-briefcase
-order: 4
+order: 2
 ---
 
-Below is a selection of my data, automation, and cloud projects.  
-Each project links to a detailed writeup or repo.
+Below is a selection of my data, automation, and cloud projects.
+Each card links to a detailed writeup.
 
-## Magento → Zapier → Google Sheets → Looker Studio
+<div class="portfolio-grid">
+  {% assign projects = site.posts
+     | where_exp: "post", "post.categories contains 'portfolio'"
+     | sort: "date" | reverse %}
 
-**What it is**  
-Automated revenue and membership dashboard for a career services company.
+  {% for project in projects %}
+    <article class="project-card">
+      <div class="project-card-inner">
+        {% if project.icon %}
+          <div class="project-icon">
+            <img src="{{ project.icon | relative_url }}" alt="">
+          </div>
+        {% endif %}
 
-**Tech**  
-Google Sheets, Zapier, Magento API, Looker Studio
+        <h2 class="project-title">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h2>
 
-**Highlights**  
-- Pulled orders and customer data from Magento through Zapier  
-- Normalized data in Google Sheets for analytics  
-- Built real time and monthly revenue dashboards in Looker Studio  
+        <p class="project-status">
+          {{ project.status | default: "Not started" }}
+        </p>
 
-[View project »](https://github.com/YOUR_USERNAME/YOUR_REPO_OR_PAGE)
+        <p class="project-tags">
+          {% if project.categories[1] %}
+            <span class="project-pill">
+              {{ project.categories[1] | capitalize }}
+            </span>
+          {% endif %}
 
----
-
-## Job feed: Kadoa → Google Sheets → XML → Appcast
-
-**What it is**  
-End to end job feed pipeline that converts scraped job data into valid XML for Appcast.
-
-**Tech**  
-Kadoa, Google Sheets, Apps Script, XML
-
-**Highlights**  
-- Collected job data with Kadoa into Google Sheets  
-- Used Apps Script to validate, clean, and convert rows into XML  
-- Automated upload of XML feed to Appcast  
-
-[View project »](https://github.com/YOUR_USERNAME/YOUR_REPO_OR_PAGE)
-
----
-
-## Microsoft Fabric membership and revenue analytics
-
-**What it is**  
-Lakehouse and Power BI model for tracking memberships, registrants, and retention.
-
-**Tech**  
-Microsoft Fabric, Lakehouse, Power BI, DAX
-
-**Highlights**  
-- Modeled memberships, registrants, and ex members in Fabric  
-- Built DAX measures for MTD, YTD, conversion and retention  
-- Designed executive friendly dashboards for leadership
-
-[View project »](https://github.com/YOUR_USERNAME/YOUR_REPO_OR_PAGE)
+          {% for tag in project.tags %}
+            <span class="project-pill">{{ tag }}</span>
+          {% endfor %}
+        </p>
+      </div>
+    </article>
+  {% endfor %}
+</div>
