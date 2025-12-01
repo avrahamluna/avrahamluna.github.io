@@ -83,7 +83,7 @@ flowchart LR
     Z3 -->|Append Rows| G
     G -->|Native Connector\nScheduled Refresh| L
     L -->|Dashboards & KPIs| U
-
+```
 
 
 - **Magento (source)**  
