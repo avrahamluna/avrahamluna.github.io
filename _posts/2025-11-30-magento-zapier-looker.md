@@ -2,9 +2,9 @@
 title: "Magento → Zapier → Google Sheets → Looker Studio"
 date: 2025-11-30
 categories: [portfolio, automation]
-tags: [magento, zapier, google sheets, looker studio]
+tags: [automation, magento, zapier, google sheets, looker studio]
 status: "Completed"
-# icon: "/assets/icons/automation.svg"  # you can add this later
+# icon: "/assets/icons/automation.svg"
 pin: true
 ---
 
