@@ -8,9 +8,6 @@ Below is a selection of my data, automation, and cloud projects.
 Each card links to a detailed writeup.
 
 **Quick filters:**  
-[All](/portfolio/) · [Microsoft Fabric projects](/categories/fabric/) · [Automation projects](/categories/automation/)
-
-**Quick filters:**  
 [All]({{ '/portfolio/' | relative_url }}) ·
 [Microsoft Fabric projects]({{ '/categories/fabric/' | relative_url }}) ·
 [Automation projects]({{ '/categories/automation/' | relative_url }})
