@@ -4,6 +4,7 @@ date: 2025-11-30
 categories: [portfolio, automation]
 tags: [automation, magento, zapier, google sheets, looker studio]
 status: "Completed"
+icon: "/assets/icons/automation.svg"
 # icon: "/assets/icons/automation.svg"
 pin: true
 ---
