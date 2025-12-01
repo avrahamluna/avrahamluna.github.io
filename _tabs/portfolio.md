@@ -10,6 +10,8 @@ Each card links to a detailed writeup.
 **Quick filters:**  
 [All]({{ '/portfolio/' | relative_url }}) · [Fabric projects]({{ '/categories/fabric/' | relative_url }}) · [Automation projects]({{ '/categories/automation/' | relative_url }})
 
+**TEST FILTERS LINE**
+
 <div class="portfolio-grid">
   {% assign projects = site.posts
      | where_exp: "post", "post.categories contains 'portfolio'"
