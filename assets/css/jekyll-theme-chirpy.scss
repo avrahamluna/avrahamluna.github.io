@@ -88,3 +88,17 @@
   border-radius: 999px;
   background-color: rgba(0, 0, 0, 0.04);
 }
+
+/* Limit size of post hero image */
+.post-cover {
+  max-height: 360px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.post-cover img {
+  max-height: 360px;
+  width: auto;
+  height: auto;
+}
