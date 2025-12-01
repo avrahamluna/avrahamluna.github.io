@@ -7,6 +7,9 @@ order: 2
 Below is a selection of my data, automation, and cloud projects.
 Each card links to a detailed writeup.
 
+**Quick filters:**  
+[All](/portfolio/) · [Fabric projects](/categories/fabric/) · [Automation projects](/categories/powerbi/) · [Automation projects](/categories/automation/)
+
 <div class="portfolio-grid">
   {% assign projects = site.posts
      | where_exp: "post", "post.categories contains 'portfolio'"
