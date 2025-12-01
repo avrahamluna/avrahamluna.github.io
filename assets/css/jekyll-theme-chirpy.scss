@@ -89,16 +89,8 @@
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-/* Limit size of post hero image */
-.post-cover {
-  max-height: 360px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+/* Hide hero image on single post pages, keep card thumbnails */
+.post .post-cover {
+  display: none;
 }
 
-.post-cover img {
-  max-height: 360px;
-  width: auto;
-  height: auto;
-}
