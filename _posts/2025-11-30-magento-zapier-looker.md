@@ -37,7 +37,6 @@ Magento, Zapier, Google Sheets, Looker Studio.
 ## 2. Architecture (Pro view)
 
 High level architecture:
-```mermaid
 flowchart LR
     classDef section fill:#ffffff,stroke:#999,stroke-width:1px,color:#111,font-weight:bold;
 
@@ -47,43 +46,44 @@ flowchart LR
     classDef bi fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px,color:#000;
     classDef users fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000;
 
-    subgraph S1["🏗️ Architecture Diagram (Pro View)"]
+    subgraph S1["Architecture Diagram (Pro View)"]
     direction LR
 
         subgraph srcLayer["Source Layer"]
         direction LR
-        M[Magento<br/>Orders • Memberships • Renewals • ECS]:::source
+        M[Magento\nOrders • Memberships • Renewals • ECS]:::source
         end
 
         subgraph etlLayer["ETL Layer (Zapier)"]
         direction LR
-        Z1[Trigger<br/>New Order in Magento]:::etl
-        Z2[Transform<br/>Parse JSON → Map Fields]:::etl
-        Z3[Load<br/>Append Row to Google Sheets]:::etl
+        Z1[Trigger\nNew Order in Magento]:::etl
+        Z2[Transform\nParse JSON → Map Fields]:::etl
+        Z3[Load\nAppend Row to Google Sheets]:::etl
         Z1 --> Z2 --> Z3
         end
 
         subgraph storageLayer["Staging Storage Layer"]
         direction LR
-        G[(Google Sheets<br/>FactOrders Table)]:::storage
+        G[(Google Sheets\nFactOrders Table)]:::storage
         end
 
         subgraph biLayer["BI & Visualization Layer"]
         direction LR
-        L[Looker Studio<br/>Revenue • Membership • ECS KPIs]:::bi
+        L[Looker Studio\nRevenue • Membership • ECS KPIs]:::bi
         end
 
         subgraph userLayer["Consumer Layer"]
         direction LR
-        U[Executive Users<br/>CEO • Marketing • Finance]:::users
+        U[Executive Users\nCEO • Marketing • Finance]:::users
         end
 
     end
 
-    M -- "REST API<br/>JSON Payload" --> Z1
-    Z3 -- "Append Rows" --> G
-    G -- "Native Connector<br/>Scheduled Refresh" --> L
-    L -- "Dashboards & KPIs" --> U
+    M -->|REST API\nJSON Payload| Z1
+    Z3 -->|Append Rows| G
+    G -->|Native Connector\nScheduled Refresh| L
+    L -->|Dashboards & KPIs| U
+
 
 
 - **Magento (source)**  
