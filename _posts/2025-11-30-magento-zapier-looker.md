@@ -41,54 +41,6 @@ High level architecture:
 
 ![Architecture diagram: Magento → Zapier → Google Sheets → Looker Studio](/assets/img/Architecture-Diagram-1.png){: .w-100 }
 
-```mermaid
-flowchart LR
-    classDef section fill:#ffffff,stroke:#999,stroke-width:1px,color:#111,font-weight:bold;
-
-    classDef source fill:#ffe6cc,stroke:#d79b00,stroke-width:1px,color:#000;
-    classDef etl fill:#e1d5e7,stroke:#9673a6,stroke-width:1px,color:#000;
-    classDef storage fill:#d5e8d4,stroke:#82b366,stroke-width:1px,color:#000;
-    classDef bi fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px,color:#000;
-    classDef users fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000;
-
-    subgraph S1["Architecture Diagram (Pro View)"]
-    direction LR
-
-        subgraph srcLayer["Source Layer"]
-        direction LR
-        M[Magento\nOrders • Memberships • Renewals • ECS]:::source
-        end
-
-        subgraph etlLayer["ETL Layer (Zapier)"]
-        direction LR
-        Z1[Trigger\nNew Order in Magento]:::etl
-        Z2[Transform\nParse JSON → Map Fields]:::etl
-        Z3[Load\nAppend Row to Google Sheets]:::etl
-        Z1 --> Z2 --> Z3
-        end
-
-        subgraph storageLayer["Staging Storage Layer"]
-        direction LR
-        G[(Google Sheets\nFactOrders Table)]:::storage
-        end
-
-        subgraph biLayer["BI & Visualization Layer"]
-        direction LR
-        L[Looker Studio\nRevenue • Membership • ECS KPIs]:::bi
-        end
-
-        subgraph userLayer["Consumer Layer"]
-        direction LR
-        U[Executive Users\nCEO • Marketing • Finance]:::users
-        end
-
-    end
-
-    M -->|REST API\nJSON Payload| Z1
-    Z3 -->|Append Rows| G
-    G -->|Native Connector\nScheduled Refresh| L
-    L -->|Dashboards & KPIs| U
-```
 
 - **Magento (source)**  
   - Exposes orders, memberships, renewals and ECS data through REST API.
@@ -107,6 +59,9 @@ flowchart LR
   - Uses calculated fields for MTD, YTD, product splits and prior period comparison.
 
 ## 3. Data flow (step by step)
+
+![Architecture diagram: Magento → Zapier → Google Sheets → Looker Studio](/assets/img/Sequence-Diagram.png){: .w-100 }
+
 
 **Event in Magento**
 
