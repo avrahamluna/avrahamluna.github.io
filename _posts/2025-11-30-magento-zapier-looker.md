@@ -39,6 +39,11 @@ Magento, Zapier, Google Sheets, Looker Studio.
 
 High level architecture:
 
+High level architecture:
+
+![Architecture diagram: Magento → Zapier → Google Sheets → Looker Studio](/assets/img/Architecture-Diagram-1.png){: .w-100 }
+
+
 ```mermaid
 flowchart LR
     classDef section fill:#ffffff,stroke:#999,stroke-width:1px,color:#111,font-weight:bold;
