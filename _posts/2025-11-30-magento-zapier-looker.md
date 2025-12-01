@@ -7,9 +7,11 @@ status: "Completed"
 # icon: "/assets/icons/automation.svg"
 # icon: "/assets/icons/automation.svg"
 pin: true
+image:
+  path: /assets/img/magento-pipeline.png
+  alt: "Data pipeline from Magento through Zapier into Google Sheets and Looker Studio"
 ---
 
-Automated revenue and membership dashboard for a career services company.
 
 ## What it is
 
