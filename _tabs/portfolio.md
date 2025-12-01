@@ -8,7 +8,7 @@ Below is a selection of my data, automation, and cloud projects.
 Each card links to a detailed writeup.
 
 **Quick filters:**  
-[All](/portfolio/) · [Fabric projects](/categories/fabric/) · [Power BI projects](/categories/powerbi/) · [Automation projects](/categories/automation/)
+[All]({{ '/portfolio/' | relative_url }}) · [Fabric projects]({{ '/categories/fabric/' | relative_url }}) · [Automation projects]({{ '/categories/automation/' | relative_url }})
 
 <div class="portfolio-grid">
   {% assign projects = site.posts
