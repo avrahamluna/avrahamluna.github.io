@@ -37,6 +37,9 @@ Magento, Zapier, Google Sheets, Looker Studio.
 ## 2. Architecture (Pro view)
 
 High level architecture:
+
+```mermaid
+
 flowchart LR
     classDef section fill:#ffffff,stroke:#999,stroke-width:1px,color:#111,font-weight:bold;
 
@@ -85,7 +88,6 @@ flowchart LR
     L -->|Dashboards & KPIs| U
 ```
 
-
 - **Magento (source)**  
   - Exposes orders, memberships, renewals and ECS data through REST API.
 
@@ -101,48 +103,6 @@ flowchart LR
 - **Looker Studio (semantic and visual layer)**  
   - Connects to Google Sheets through the native connector.  
   - Uses calculated fields for MTD, YTD, product splits and prior period comparison.
-
-Text diagram:
-
-`Magento API → Zapier → Google Sheets → Looker Studio → Executives dashboard`
-
-## 8. Variants and extensions
-
-- Add CRM data by joining another sheet with campaign or lead source.
-- Move the warehouse to BigQuery and point Looker Studio to BigQuery for scalable history.
-- Add cohort and retention views for active members by start month and churn.
-- Add alerting with Zapier or Apps Script when daily revenue drops below a threshold.
-
----
-
-## 9. Design journal
-
-**Problem**  
-Leadership wanted daily visibility into revenue and membership performance instead of waiting for month-end reports.
-
-**Constraints**  
-No dedicated data warehouse or engineering team, limited budget, non-technical stakeholders.
-
-**Choice**  
-Build a lightweight pipeline using Magento, Zapier, Google Sheets, and Looker Studio.
-
-**Results**
-
-- Automated ingestion removed manual exports from Magento.
-- Executives can see Daily, MTD, and YTD metrics in a single dashboard.
-
----
-
-## 10. tl;dr
-
-- Magento records the sale.  
-- Zapier listens for new sales and copies them into a Google Sheet.  
-- The Google Sheet behaves like a simple database.  
-- Looker Studio reads the sheet and turns the numbers into charts and KPIs.  
-- Executives open a link and see the latest revenue and membership numbers.
-
-
----
 
 ## 3. Data flow (step by step)
 
@@ -256,6 +216,50 @@ Simple checks:
 - Conditional formatting in Sheets to flag negative or zero revenue.
 
 Example Sheets formula:
+
+Text diagram:
+
+`Magento API → Zapier → Google Sheets → Looker Studio → Executives dashboard`
+
+## 8. Variants and extensions
+
+- Add CRM data by joining another sheet with campaign or lead source.
+- Move the warehouse to BigQuery and point Looker Studio to BigQuery for scalable history.
+- Add cohort and retention views for active members by start month and churn.
+- Add alerting with Zapier or Apps Script when daily revenue drops below a threshold.
+
+---
+
+## 9. Design journal
+
+**Problem**  
+Leadership wanted daily visibility into revenue and membership performance instead of waiting for month-end reports.
+
+**Constraints**  
+No dedicated data warehouse or engineering team, limited budget, non-technical stakeholders.
+
+**Choice**  
+Build a lightweight pipeline using Magento, Zapier, Google Sheets, and Looker Studio.
+
+**Results**
+
+- Automated ingestion removed manual exports from Magento.
+- Executives can see Daily, MTD, and YTD metrics in a single dashboard.
+
+---
+
+## 10. tl;dr
+
+- Magento records the sale.  
+- Zapier listens for new sales and copies them into a Google Sheet.  
+- The Google Sheet behaves like a simple database.  
+- Looker Studio reads the sheet and turns the numbers into charts and KPIs.  
+- Executives open a link and see the latest revenue and membership numbers.
+
+
+---
+
+
 
 ```text
 =MAX(FILTER(order_date, revenue_amount > 0))
