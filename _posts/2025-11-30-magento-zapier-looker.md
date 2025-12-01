@@ -3,6 +3,7 @@ title: "Magento → Zapier → Google Sheets → Looker Studio"
 date: 2025-11-30
 categories: [portfolio, automation]
 tags: [automation, magento, zapier, google sheets, looker studio]
+mermaid: true
 status: "Completed"
 # icon: "/assets/icons/automation.svg"
 # icon: "/assets/icons/automation.svg"
@@ -14,7 +15,7 @@ image:
 
 ## 1. Overview (TL;DR)
 
-**Name:** BlueSteps Daily Revenue Dashboard  
+**Name:** BS Daily Revenue Dashboard  
 
 **Goal:**  
 Give leadership a near real time view of revenue, memberships, renewals, and ECS performance by product, day, and month, without manual exports from Magento.
@@ -39,7 +40,6 @@ Magento, Zapier, Google Sheets, Looker Studio.
 High level architecture:
 
 ```mermaid
-
 flowchart LR
     classDef section fill:#ffffff,stroke:#999,stroke-width:1px,color:#111,font-weight:bold;
 
