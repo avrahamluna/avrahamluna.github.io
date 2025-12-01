@@ -8,10 +8,19 @@ status: "Completed"
 # icon: "/assets/icons/automation.svg"
 # icon: "/assets/icons/automation.svg"
 pin: true
-Image:
+image:
   path: /assets/img/magento-zapier-dashboard-page1.png
   alt: "Daily revenue and memberships dashboard in Looker Studio"
 ---
+## 0. Dashboards & KPIs
+
+This is the dashboard leadership used day-to-day:
+
+![Main KPIs dashboard](/assets/img/magento-zapier-dashboard-page1.png){: .w-100 }
+
+Second page with more detail:
+
+![Detailed breakdown view](/assets/img/magento-zapier-dashboard-page2.png){: .w-100 }
 
 ## 1. Overview (TL;DR)
 
