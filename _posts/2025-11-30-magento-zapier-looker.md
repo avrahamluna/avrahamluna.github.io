@@ -39,10 +39,7 @@ Magento, Zapier, Google Sheets, Looker Studio.
 
 High level architecture:
 
-High level architecture:
-
 ![Architecture diagram: Magento → Zapier → Google Sheets → Looker Studio](/assets/img/Architecture-Diagram-1.png){: .w-100 }
-
 
 ```mermaid
 flowchart LR
@@ -226,6 +223,9 @@ Text diagram:
 
 `Magento API → Zapier → Google Sheets → Looker Studio → Executives dashboard`
 
+```text
+=MAX(FILTER(order_date, revenue_amount > 0))
+
 ## 8. Variants and extensions
 
 - Add CRM data by joining another sheet with campaign or lead source.
@@ -266,5 +266,4 @@ Build a lightweight pipeline using Magento, Zapier, Google Sheets, and Looker St
 
 
 
-```text
-=MAX(FILTER(order_date, revenue_amount > 0))
+
