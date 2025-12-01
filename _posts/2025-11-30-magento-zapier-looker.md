@@ -8,9 +8,9 @@ status: "Completed"
 # icon: "/assets/icons/automation.svg"
 # icon: "/assets/icons/automation.svg"
 pin: true
-image:
-  path: /assets/img/magento-pipeline.png
-  alt: "Data pipeline from Magento through Zapier into Google Sheets and Looker Studio"
+Image:
+  path: /assets/img/magento-zapier-dashboard-page1.png
+  alt: "Daily revenue and memberships dashboard in Looker Studio"
 ---
 
 ## 1. Overview (TL;DR)
@@ -38,6 +38,8 @@ Magento, Zapier, Google Sheets, Looker Studio.
 ## 2. Architecture (Pro view)
 
 High level architecture:
+
+![Architecture diagram: Magento → Zapier → Google Sheets → Looker Studio](/assets/img/magento-pipeline.png){: .w-100 }
 
 ![Architecture diagram: Magento → Zapier → Google Sheets → Looker Studio](/assets/img/Architecture-Diagram-1.png){: .w-100 }
 
