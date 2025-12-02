@@ -187,7 +187,10 @@ flowchart LR
         *   Merchant accounts and payment data
             
   4.  Core measures followed patterns like:
-  Revenue :=
+4. Core measures followed patterns like:
+
+```DAX
+Revenue :=
 SUM ( 'Transactions'[Settlement Amount] )
 
 Revenue YTD :=
@@ -207,6 +210,7 @@ CALCULATE (
     [Revenue],
     'ProductMap'[Category] = "Renewal"
 )
+```
 
     
 5.  **Reporting and distribution**
