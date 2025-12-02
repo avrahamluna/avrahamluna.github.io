@@ -127,6 +127,7 @@ flowchart LR
     Measures --> Dashboard
     Dashboard --> PDF
     PDF --> Stakeholders
+```
 
 5\. Data flow
 -------------
@@ -185,7 +186,28 @@ flowchart LR
             
         *   Merchant accounts and payment data
             
-4.  Core measures followed patterns like:Revenue :=SUM ( 'Transactions'\[Settlement Amount\] )Revenue YTD :=CALCULATE ( \[Revenue\], DATESYTD ( 'Date'\[Date\] ))Membership Revenue :=CALCULATE ( \[Revenue\], 'ProductMap'\[Category\] = "Membership")Renewal Revenue :=CALCULATE ( \[Revenue\], 'ProductMap'\[Category\] = "Renewal")Budget values lived in a small reference table and were compared against actuals for each month and year.
+  4.  Core measures followed patterns like:
+  Revenue :=
+SUM ( 'Transactions'[Settlement Amount] )
+
+Revenue YTD :=
+CALCULATE (
+    [Revenue],
+    DATESYTD ( 'Date'[Date] )
+)
+
+Membership Revenue :=
+CALCULATE (
+    [Revenue],
+    'ProductMap'[Category] = "Membership"
+)
+
+Renewal Revenue :=
+CALCULATE (
+    [Revenue],
+    'ProductMap'[Category] = "Renewal"
+)
+
     
 5.  **Reporting and distribution**
     
