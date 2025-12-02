@@ -1,7 +1,7 @@
 ---
 title: "BS Revenue KPI Dashboard"
 date: 2025-12-02
-categories: [Portfolio]
+categories: [portfolio, power bi]
 
 # keep any keys your Magento project has:
 project_status: completed        # or "in progress" etc.
