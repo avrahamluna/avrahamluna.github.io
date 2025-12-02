@@ -1,7 +1,7 @@
 ---
 title: "BS Revenue KPI Dashboard"
 date: 2025-12-02
-categories: [portfolio, power bi]
+categories: [portfolio, power bi, Power Bi]
 
 # keep any keys your Magento project has:
 project_status: completed        # or "in progress" etc.
@@ -10,6 +10,7 @@ project_type: Automation         # or whatever makes it show under that filter
 tags:
   - Automation
   - power bi
+  - Power Bi
   - revenue
   - braintree
   - paypal
