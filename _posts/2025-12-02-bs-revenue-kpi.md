@@ -186,7 +186,7 @@ flowchart LR
             
         *   Merchant accounts and payment data
             
-  4.  Core measures followed patterns like:
+
 4. Core measures followed patterns like:
 
 ```DAX
