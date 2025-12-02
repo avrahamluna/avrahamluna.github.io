@@ -10,7 +10,7 @@ Each card links to a detailed writeup.
 **Quick filters:**  
 [All]({{ '/portfolio/' | relative_url }}) ·
 [Microsoft Fabric]({{ '/categories/fabric/' | relative_url }}) ·
-[Power Bi]({{ '/categories/power bi/' | relative_url }}) ·
+[Power Bi]({{ '/categories/powerbi/' | relative_url }}) ·
 [Automation]({{ '/categories/automation/' | relative_url }})
 
 
