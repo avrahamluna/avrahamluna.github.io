@@ -17,7 +17,7 @@ tags:
 
 # if you have `summary` / `excerpt` / `description`, fill it:
 summary: "Monthly revenue KPIs from Braintree, PayPal, Magento, Hogan, and Mintz, modeled in Power BI and delivered as PDF to leadership."
-image: /assets/img/projects/bluesteps-kpi/cover.png   # we can fix later
+image: /assets/img/24-12 BS-Revenue KPI-2-6.png   # we can fix later
 ---
 ## TL;DR
 
