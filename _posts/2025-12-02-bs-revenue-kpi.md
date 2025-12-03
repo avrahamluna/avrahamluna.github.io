@@ -69,6 +69,8 @@ My task was to create a recurring monthly report that combined all of this into 
 
 ## 4. Architecture overview
 
+![Architecture with Fivetran]( /assets/img/projects/bluesteps-kpi/arch-fivetran.png )
+
 ```mermaid
 flowchart LR
     classDef section fill:#f9fafb,stroke:#d4d4d8,stroke-width:1px,color:#111,font-weight:bold;
@@ -224,6 +226,10 @@ CALCULATE (
 
 6\. KPI design
 --------------
+
+![Monthly refresh workflow]( /assets/img/projects/bluesteps-kpi/refresh-sequence.png )
+
+
 
 The report was structured around how leadership thought about the business.
 
