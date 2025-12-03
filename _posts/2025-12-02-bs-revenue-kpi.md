@@ -71,65 +71,7 @@ My task was to create a recurring monthly report that combined all of this into 
 
 ![Architecture with Fivetran]( /assets/img/projects/bluesteps-kpi/arch-fivetran.png )
 
-```mermaid
-flowchart LR
-    classDef section fill:#f9fafb,stroke:#d4d4d8,stroke-width:1px,color:#111,font-weight:bold;
-    classDef node fill:#ffffff,stroke:#d4d4d8,stroke-width:1px,color:#111;
-
-    subgraph Sources["Source systems"]
-      class Sources section
-      Braintree["Braintree\ntransactions"]
-      PayPal["PayPal\nreports"]
-      Magento["Magento\norders and memberships"]
-      Hogan["Hogan\nassessment revenue"]
-      Mintz["Mintz\npartner revenue"]
-      class Braintree,PayPal,Magento,Hogan,Mintz node
-    end
-
-    subgraph FivetranLayer["Managed sync"]
-      class FivetranLayer section
-      Fivetran["Fivetran connector\nfor Braintree"]
-      BraintreeReplica["Braintree replica\nstaging tables for analytics"]
-      class Fivetran,BraintreeReplica node
-    end
-
-    subgraph Staging["Staging and cleaning"]
-      class Staging section
-      Exports["Monthly CSV and Excel files\nPayPal, Magento, Hogan, Mintz"]
-      class Exports node
-    end
-
-    subgraph PowerBI["Power BI model"]
-      class PowerBI section
-      Model["Data model\ncalendar table, product mapping,\nmerchant account mapping"]
-      Measures["DAX measures\nytd, mom, yoy, budget vs actual"]
-      class Model,Measures node
-    end
-
-    subgraph Reporting["Reporting and delivery"]
-      class Reporting section
-      Dashboard["Revenue KPI dashboard\nytd and mom views"]
-      PDF["Export to PDF"]
-      Stakeholders["Leadership inbox\nmonthly email distribution"]
-      class Dashboard,PDF,Stakeholders node
-    end
-
-    %% flows
-    Braintree --> Fivetran
-    Fivetran --> BraintreeReplica
-
-    PayPal --> Exports
-    Magento --> Exports
-    Hogan --> Exports
-    Mintz --> Exports
-
-    BraintreeReplica --> Model
-    Exports --> Model
-    Model --> Measures
-    Measures --> Dashboard
-    Dashboard --> PDF
-    PDF --> Stakeholders
-```
+This diagram shows how Braintree flows through Fivetran into Power BI, while PayPal, Magento, Hogan, and Mintz are loaded from exports and modeled together for the KPI report.
 
 5\. Data flow
 -------------
@@ -229,9 +171,13 @@ CALCULATE (
 
 ![Monthly refresh workflow]( /assets/img/projects/bluesteps-kpi/refresh-sequence.png )
 
-
-
 The report was structured around how leadership thought about the business.
+
+**Why this flow matters**
+
+- The CEO gets an updated YTD vs budget view in a familiar PDF format.
+- Braintree is synced automatically by Fivetran, so the most critical payment data stays fresh.
+- I own the Power BI model and refresh workflow from Fivetran + CSV sources to the final PDF report.
 
 **Top level**
 
@@ -322,8 +268,6 @@ This loop ensured leadership had a fresh view of revenue after each month closed
     
 *   No additional portal or tool training was required.
     
-    
-
 9\. What I would do today
 -------------------------
 
@@ -343,6 +287,8 @@ If I rebuilt this project now, I would:
 Below is how the dashboard looked from a stakeholder perspective.Each page focuses on a different level of the revenue story.
 
 ### 10.1 Executive summary (Page 1)
+
+
 
 **Purpose**
 
