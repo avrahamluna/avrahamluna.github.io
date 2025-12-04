@@ -288,36 +288,6 @@ Below is how the dashboard looked from a stakeholder perspective.Each page focus
 
 ### 10.1 Executive summary (Page 1)
 
-
-
-**Purpose**
-
-Give leadership a quick answer to:
-
-*   How are we tracking year to date versus last year
-    
-*   Are we above or below the 2024 revenue budget
-    
-*   How much ECS, memberships, and renewals are contributing to total revenue
-    
-
-**Key elements**
-
-*   YTD BS Revenue comparing:
-    
-    *   2023 actual
-        
-    *   2024 budget
-        
-    *   2024 YTD actual
-        
-*   ECS revenue YTD vs budget.
-    
-*   Total revenue across all merchant accounts.
-    
-
-### 10.2 Program drilldown (Page 2)
-
 **Purpose**
 
 Let finance and marketing see which programs are driving growth.
@@ -331,9 +301,72 @@ Let finance and marketing see which programs are driving growth.
     *   Renewal revenue
         
     *   ECS revenue
-        
-*   Hogan and Mintz revenue trends.
+
+![BlueSteps Revenue KPIs - Page 1](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p1.png)
+
+Short explanation:
+- YTD vs budget and prior year
+- High level ECS / memberships / renewals view
+
+**Purpose**
+
+Give leadership a quick answer to:
+
+*   How are we tracking year to date versus last year
     
+*   Are we above or below the 2024 revenue budget
+    
+*   How much ECS, memberships, and renewals are contributing to total revenue
+    
+**Key elements**
+
+*   YTD BS Revenue comparing:
+    
+    *   2023 actual
+        
+    *   2024 budget
+        
+    *   2024 YTD actual
+        
+*   ECS revenue YTD vs budget.
+    
+*   Total revenue across all merchant accounts.
+
+    
+
+### 10.2 ECS Revenue MoM(Page 2)
+
+![ECS-Revenue](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p2.png)
+
+Short explanation:
+- MoM breakdown of memberships, renewals, ECS
+- Hogan and Mintz revenue trends
+- Total revenue MoM 2023 vs 2024
+
+### 10.3 Membership + Renewals (Page 3)
+
+![Membership + Renewals](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p3.png)
+
+
+### 10.4 BS Membership (Page 4)
+
+![BS Memberships](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p4.png)
+
+**Key elements**
+
+*   Month over month charts for:
+        
+### 10.5 Hogan and Mintz detail (Page 5)
+
+![Hogan and Mintz](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p5.png)
+
+ *  Hogan and Mintz revenue trends.
+
+### 10.6 Total Revenue (Page 6)
+
+![Total Revenue](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p5.png)
+
+
 *   Total revenue MoM with 2023 vs 2024 for context.
     
 
