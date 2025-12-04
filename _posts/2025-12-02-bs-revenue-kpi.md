@@ -377,7 +377,7 @@ Each visual is driven by the measures described in the system design section abo
 
 This revenue KPI dashboard sat next to my other reporting assets:
 
-*   **Magento → Zapier → Google Sheets → Looker Studio** (/posts/magento-zapier-looker-studio/)
+*   **Magento → Zapier → Google Sheets → Looker Studio** (/posts/magento-zapier-looker/)
 *   Day to day operational dashboards for orders, memberships, and campaign performance.
 *     While the BlueSteps KPI report focused on a monthly executive view, the Magento → Zapier → Looker Studio project was more about near real time operational visibility for the same business.
 * In practice, the BlueSteps KPI dashboard was the monthly executive view, while the Magento and Fabric projects focused on the underlying pipelines and secure self service analytics.
@@ -387,5 +387,5 @@ Later, I started studying Microsoft Fabric as a new skill, which I document in a
 
 ### Related projects
 
-- [Magento → Zapier → Google Sheets → Looker Studio](/posts/2025-11-30-magento-zapier-looker.md/)  
-- [Securing a Fabric data warehouse with RLS and CLS](/posts/2025-11-30-fabric-security-warehouse.md/)
+- [Magento → Zapier → Google Sheets → Looker Studio](/posts/magento-zapier-looker/)  
+- [Securing a Fabric data warehouse with RLS and CLS](/posts/fabric-security-warehouse/)
