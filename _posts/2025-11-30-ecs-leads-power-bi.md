@@ -10,4 +10,4 @@ image:
 ---
 > End to end Power BI reporting on Executive Career Services (ECS) leads, advisor performance, and lead to revenue conversion using Magento and Braintree data.
 
-![Executive Career Services lead dashboard overview](/assets/img/ecs-leads/ecs-hero.png)
+![Executive Career Services lead dashboard overview](/assets/img/projects/ecs-leads/ecs-hero.png)
