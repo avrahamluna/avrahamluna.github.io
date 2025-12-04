@@ -302,7 +302,7 @@ Let finance and marketing see which programs are driving growth.
         
     *   ECS revenue
 
-![BlueSteps Revenue KPIs - Page 1](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p1.png)
+![BlueSteps Revenue KPIs - Page 1](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-p1.png)
 
 Short explanation:
 - YTD vs budget and prior year
@@ -336,7 +336,7 @@ Give leadership a quick answer to:
 
 ### 10.2 ECS Revenue MoM(Page 2)
 
-![ECS-Revenue](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p2.png)
+![ECS-Revenue](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-p2.png)
 
 Short explanation:
 - MoM breakdown of memberships, renewals, ECS
@@ -345,12 +345,12 @@ Short explanation:
 
 ### 10.3 Membership + Renewals (Page 3)
 
-![Membership + Renewals](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p3.png)
+![Membership + Renewals](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-p3.png)
 
 
 ### 10.4 BS Membership (Page 4)
 
-![BS Memberships](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p4.png)
+![BS Memberships](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-p4.png)
 
 **Key elements**
 
@@ -358,13 +358,13 @@ Short explanation:
         
 ### 10.5 Hogan and Mintz detail (Page 5)
 
-![Hogan and Mintz](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p5.png)
+![Hogan and Mintz](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-p5.png)
 
  *  Hogan and Mintz revenue trends.
 
 ### 10.6 Total Revenue (Page 6)
 
-![Total Revenue](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-2024-p5.png)
+![Total Revenue](/assets/img/projects/bluesteps-kpi/bs-revenue-kpi-p6.png)
 
 
 *   Total revenue MoM with 2023 vs 2024 for context.
