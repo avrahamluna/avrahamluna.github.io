@@ -377,7 +377,7 @@ Each visual is driven by the measures described in the system design section abo
 
 This revenue KPI dashboard sat next to my other reporting assets:
 
-*   **Magento → Zapier → Google Sheets → Looker Studio**(/posts/magento-zapier-looker/)
+*   [**Magento → Zapier → Google Sheets → Looker Studio**](/posts/magento-zapier-looker/)
 *   Day to day operational dashboards for orders, memberships, and campaign performance.
 *     While the BlueSteps KPI report focused on a monthly executive view, the Magento → Zapier → Looker Studio project was more about near real time operational visibility for the same business.
 * In practice, the BlueSteps KPI dashboard was the monthly executive view, while the Magento and Fabric projects focused on the underlying pipelines and secure self service analytics.
