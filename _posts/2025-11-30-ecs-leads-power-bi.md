@@ -4,9 +4,8 @@ date: 2025-11-30
 categories: [portfolio, powerbi]
 status: "Completed"
 tags: [powerbi, Magento, Braintree, DAX, Lead Funnel]
-
-# image:
-#  path: /assets/img/projects/ecs-leads/ecs-hero.png
+image:
+path: /assets/img/projects/ecs-leads/ecs-hero.png
  # alt: "Executive Career Services lead and revenue dashboard in Power BI"
 
 ---
