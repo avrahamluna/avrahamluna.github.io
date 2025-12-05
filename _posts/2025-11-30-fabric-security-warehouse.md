@@ -5,7 +5,7 @@ categories: [portfolio, fabric]
 tags: [fabric, warehouse, security, rls, cls]
 status: "In progress"
 # icon: "/assets/icons/fabric-security.svg"
-pin: true
+pin: false
 ---
 
 Lab-style project documenting how to secure a Microsoft Fabric Warehouse
