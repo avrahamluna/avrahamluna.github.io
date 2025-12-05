@@ -7,7 +7,7 @@ status: "Completed"
 
 tags: [powerbi, Magento, Braintree, DAX, Lead Funnel]
 
-icon: /assets/img/projects/ecs-leads/ecs-hero.png
+# icon: /assets/img/projects/ecs-leads/ecs-hero.png
 
 image:
   path: /assets/img/projects/ecs-leads/ecs-hero.png
