@@ -2,8 +2,9 @@
 layout: post
 title: "Executive Career Services Lead Pipeline Analytics"
 date: 2025-11-30
-categories: [Portfolio, Power BI]
-tags: [Power BI, Magento, Braintree, DAX, Lead Funnel]
+categories: [portfolio, powerbi]
+status: "Completed"
+tags: [powerbi, Magento, Braintree, DAX, Lead Funnel]
 image:
   path: /assets/img/projects/ecs-leads/ecs-hero.png
   alt: "Executive Career Services lead and revenue dashboard in Power BI"
